@@ -8,6 +8,9 @@ namespace SmartTrafficIntersection
         protected readonly Direction _riskyDirection;
         protected readonly string _controllerName;
         protected bool _allowed = false;
+
+        public bool Allowed { get {return _allowed;} set {_allowed = value; }}
+
         public TrafficController(string name, Direction direction, Direction riskyDirection)
         {
             _controllerName = name;
@@ -35,5 +38,15 @@ namespace SmartTrafficIntersection
         public void ControlTraffic(int ControlSignal){
             
         } // Control Traffic Controller
+
+        public void Flip()
+        {
+            _allowed = !_allowed;
+        }
+
+        public string Status()
+        {
+            return _allowed?"Allowed":"Not Allowed";
+        } 
     }
 }
