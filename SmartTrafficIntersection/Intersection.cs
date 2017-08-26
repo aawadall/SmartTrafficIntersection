@@ -7,7 +7,8 @@ namespace SmartTrafficIntersection
 	// Intersection Superclass
 	public class Intersection
 	{
-		protected List<TrafficLight> _trafficLights;
+		// An Intersection should have a set of lanes with different directions, and a set of traffic lights controlling them
+		protected List<ITrafficController> _trafficControllers;
         protected List<Lane> _lanes;
 
 	}
