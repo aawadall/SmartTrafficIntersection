@@ -31,6 +31,9 @@
     <Compile Include="FourDirectionIntersection.cs" />
     <Compile Include="ITrafficLight.cs" />
     <Compile Include="IDirection.cs" />
+    <Compile Include="Intersection.cs" />
+    <Compile Include="ILane.cs" />
+    <Compile Include="Lane.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>

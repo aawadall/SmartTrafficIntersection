@@ -2,7 +2,7 @@
 namespace SmartTrafficIntersection
 {
     // Simple 4 Directions Intersection (N, W, S, E)
-    public class FourDirectionIntersection : IIntersection
+    public class FourDirectionIntersection : Intersection, IIntersection
     {
         public FourDirectionIntersection()
         {
