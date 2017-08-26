@@ -65,6 +65,7 @@ namespace SmartTrafficIntersection
                 for(int i=0;i<TrafficOut;i++)
                     _waitTime.Dequeue();
             }
+            
             int TrafficIn = _rnd.Next(_inFlow);
             for(int i=0;i<TrafficIn;i++)
                 _waitTime.Enqueue(0);
