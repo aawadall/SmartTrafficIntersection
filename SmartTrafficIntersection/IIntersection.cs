@@ -1,5 +1,4 @@
-﻿using System;
-namespace SmartTrafficIntersection
+﻿namespace SmartTrafficIntersection
 {
     // Nothing interesting here yet
     public interface IIntersection

@@ -1,5 +1,4 @@
-﻿using System;
-namespace SmartTrafficIntersection
+﻿namespace SmartTrafficIntersection
 {
     // Lane Interface
     public interface ILane
