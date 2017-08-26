@@ -5,19 +5,26 @@ namespace SmartTrafficIntersection
     public class TrafficController : ITrafficController
     {
         protected readonly Direction _direction;
+        protected readonly Direction _riskyDirection;
         protected readonly string _controllerName;
-        public TrafficController(string name, Direction direction)
+        protected bool _allowed = false;
+        public TrafficController(string name, Direction direction, Direction riskyDirection)
         {
             _controllerName = name;
             _direction = direction;
+            _riskyDirection = riskyDirection;
         }
+
+        public TrafficController(string name, Direction direction) : this(name, direction, null){}
 
         public bool IsAllowed(IDirection direction)
         {
-            return false;
+            return (_allowed && 
+            (direction == _direction || 
+             direction == _riskyDirection));
         } // Is traffic Allowed for that direction?
         public bool IsRisky(IDirection direction){
-            return false;
+            return direction == _riskyDirection;
         } // Is traffic at that direction risky?
         public bool IsIncomingTraffic(IDirection direction){
             return false;
