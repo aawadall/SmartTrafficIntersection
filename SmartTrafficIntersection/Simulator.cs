@@ -44,8 +44,11 @@ namespace SmartTrafficIntersection
         {
             get{
                 int Wait=0;
-                for(int i=0;i<_waitTime.Count;i++)
-                Wait += _waitTime.ElementAt(i);
+                if(_waitTime.Count > 0)
+                {
+                    for(int i=0;i<_waitTime.Count;i++)
+                        Wait += _waitTime.ElementAt(i);   
+                }
                 return Wait;
             }
         }
@@ -62,13 +65,15 @@ namespace SmartTrafficIntersection
                     TrafficOut = (int) (TrafficOut * _riskFactor);
                 }
                 TrafficOut = _rnd.Next(TrafficOut);
-                for(int i=0;i<TrafficOut;i++)
-                    _waitTime.Dequeue();
+                  
+                    for(int i=0;i<TrafficOut && _waitTime.Count >0;i++)
+                        _waitTime.Dequeue();
             }
-            
+
             int TrafficIn = _rnd.Next(_inFlow);
-            for(int i=0;i<TrafficIn;i++)
-                _waitTime.Enqueue(0);
+            
+                for(int i=0;i<TrafficIn;i++)
+                    _waitTime.Enqueue(0);
         }
     }
 }
