@@ -6,7 +6,11 @@ namespace SmartTrafficIntersection
      * with no significance yet to real direction  */
     public class Direction : IDirection
     {
-        protected string _directionName;
+        protected readonly string _directionName;
 
+        public Direction(string name)
+        {
+            _directionName = name;
+        }
     }
 }
