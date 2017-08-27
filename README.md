@@ -1,7 +1,7 @@
 # SmartTrafficIntersection
 Another AI toy project; Of a traffic intersection controlled by an AI agent to optimize traffic flow and avoid collission. 
 
-![Sample 8 lanes intersection](SmartTrafficIntersection/GRrTr.png)
+![Sample 8 lanes intersection](https://github.com/aawadall/SmartTrafficIntersection/blob/master/GRrTr.png)
 ## How to use it
 ### on Linux
 #### Install Mono .NET framework on your machine
