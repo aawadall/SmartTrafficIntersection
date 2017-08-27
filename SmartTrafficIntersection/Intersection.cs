@@ -24,15 +24,12 @@ namespace SmartTrafficIntersection
             int WaitTime = 0;
             for(int i=0;i< _lanes.Count && _lanes.Count > 0;i++)
             {
-                Console.WriteLine(String.Format("Intersection > WT:{0}",_lanes[i].WaitTime));
                 WaitTime+= _lanes[i].WaitTime;
             }
-            Console.WriteLine(String.Format("Wait Time: {0}",WaitTime));
             return WaitTime;
         }
         public virtual void Control(int controlSignal)
         {
-            Console.WriteLine(String.Format("Control Signal : {0}",Convert.ToString(controlSignal,2)));
             // rightmost bit is bit 0
             for(int j=0;j<_trafficControllers.Count && _trafficControllers.Count>0;j++)
             {
@@ -52,5 +49,17 @@ namespace SmartTrafficIntersection
            return State; 
         } // Current State of the Intersection in terms of Traffic Controllers 
 
+        public virtual void AlterFlow(int laneIndex, int inFlowDelta, int outFlowDelta)
+        {
+            if(laneIndex < _lanes.Count)
+            {
+                _lanes[laneIndex].InFlow += inFlowDelta;
+                if (_lanes[laneIndex].InFlow < 0 )
+                    _lanes[laneIndex].InFlow = 0;
+                _lanes[laneIndex].OutFlow += outFlowDelta;
+                if (_lanes[laneIndex].OutFlow < 0 )
+                    _lanes[laneIndex].OutFlow = 0;  
+            }
+        } // Alter flow of a lane if exist
     }
 }

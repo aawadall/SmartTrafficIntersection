@@ -32,7 +32,6 @@ namespace SmartTrafficIntersection
         // Simulator 
         public void Simulate(TrafficController controller)
         {
-            Console.Write(String.Format("{0} : ",_laneName));
             _sim.SimulateTraffic(controller.IsAllowed(_direction), controller.IsRisky(_direction));
         }
 

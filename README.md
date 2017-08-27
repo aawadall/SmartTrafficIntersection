@@ -24,3 +24,8 @@ Visualize intersection in terms of lanes, controller status and traffic accumila
 
 ## Current Developement 
 * Writing first agent to control traffic 
+
+## Future Developement
+* Collision detection 
+* Bad driver simulator
+* Pedestrians 
