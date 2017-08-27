@@ -6,7 +6,7 @@ Also, please try to test this game on your machine, play with parameters, try to
 
 My contacts are:
 * email aawadall@ualberta.ca
-* twitter @arashad 
+* twitter [@arashad](https://twitter.com/arashad) 
 
 Thank you 
 
