@@ -72,7 +72,7 @@ In addition, each lane has a direction as a property.
 
 When traffic is allowed,
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=c_k^{l_j^{d_i}}&space;=&space;true" target="_blank"><img src="https://latex.codecogs.com/gif.latex?c_k^{l_j^{d_i}}&space;=&space;true" title="c_k^{l_j^{d_i}} = true" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=c_k^p&space;.&space;d_i&space;=&space;true" target="_blank"><img src="https://latex.codecogs.com/gif.latex?c_k^p&space;.&space;d_i&space;=&space;true" title="c_k^p . d_i = true" /></a>
 
 i.e. Traffic Controller associated with this lane allows traffic flowing out, it will dequeue using the 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\phi_{in},&space;\text{incoming&space;traffic&space;flow}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\phi_{out}" title="\phi_{out}, \text{outgoing traffic flow}" /></a>
