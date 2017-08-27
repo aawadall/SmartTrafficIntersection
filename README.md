@@ -35,16 +35,17 @@ Run
 
 ## Theoritical Model 
 
-Current Model is designed that a single agent  controls an Intersection _I_ = {_D_, _L_, _C_}; made of one or more directoins _d_<sub>i</sub> &in; _D_, Lanes _l_<sub>j</sub> &in; _L_, and Traffic Controllers _c_<sub>k</sub> &in; _C_,
+Current Model is designed that a single agent  controls an Intersection <a href="https://www.codecogs.com/eqnedit.php?latex=\mathcal{I}&space;=&space;\{\mathcal{D},\mathcal{L},\mathcal{C}\}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathcal{I}&space;=&space;\{\mathcal{D},\mathcal{L},\mathcal{C}\}" title="\mathcal{I} = \{\mathcal{D},\mathcal{L},\mathcal{C}\}" /></a>; made of one or more directoins <a href="https://www.codecogs.com/eqnedit.php?latex=d_i&space;\in&space;\mathcal{D}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?d_i&space;\in&space;\mathcal{D}" title="d_i \in \mathcal{D}" /></a>, Lanes <a href="https://www.codecogs.com/eqnedit.php?latex=l_j&space;\in&space;\mathcal{L}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?l_j&space;\in&space;\mathcal{L}" title="l_j \in \mathcal{L}" /></a>, and Traffic Controllers <a href="https://www.codecogs.com/eqnedit.php?latex=c_k&space;\in&space;\mathcal{C}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?c_k&space;\in&space;\mathcal{C}" title="c_k \in \mathcal{C}" /></a>
 
-### Directions _d_<sub>i</sub> &in; _D_
+### Directions 
+
 The direction is a conceptual entity used to identify where the traffic flows. It can be considered a vector in the traffic space listing all possible traffic flows.
 
 It is used to:
 * link lanes to traffic controllers
 * detect potential collision 
 
-### Lanes _l_<sub>j</sub> &in; _L_
+### Lanes 
 A lane is the physical lane, where traffic lines up. It contains a queue simulator with _flow<sub>in</sub>_ and _flow<sub>out</sub>_ parameters. 
 
 Each lane has a direction as a property.
@@ -53,7 +54,7 @@ When traffic is allowed, i.e. Traffic Controller _c<sub>k</sub>_ associated with
 
 And in all situations, the lane is capable of measuring total wait time for all clients queued in the lane t(_l<sub>j</sub>_) = &Sigma; t(_client_) &forall; _client_ &in; _l<sub>j</sub>_. Such wait time is used as a cost function to minimize.  
 
-### Traffic Controllers _c<sub>k</sub>_ &in; _C_
+### Traffic Controllers 
 Traffic Controllers are general case of a traffic light in an intersection. 
 
 Current model is considering a simple binary traffic light only, with two states {_False_ &rarr; _Red_,_True_ &rarr; _Green_}.
