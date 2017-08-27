@@ -2,11 +2,22 @@ namespace SmartTrafficIntersection
 {
     public class Agent : IAgent
     {
-        public void Learn(int State1, int State2, int Action, int Reward)
-        {}
-        public int GetBestMove(int State)
+        private Policy _policy;
+
+        public Agent(int states, int actions)
         {
-            return 0;
+            double _alpha = 0.25;
+            double _gamma = 0.85;
+
+            _policy = new QPolicy(states, actions, _alpha, _gamma);
+        }
+        public void Learn(int state1, int state2, int action, int reward)
+        {
+            _policy.Learn(state1, state2, action, reward);
+        }
+        public int GetBestMove(int state)
+        {
+            return _policy.GetBestMove(state);
         }
     }
 }

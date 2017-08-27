@@ -10,11 +10,13 @@ namespace SmartTrafficIntersection
 		protected List<Direction> _directions;
 		protected List<TrafficController> _trafficControllers;
         protected List<Lane> _lanes;
+        protected int tick = 0;
 
         public int Directons {get{return _directions.Count;}} 
         public int Lanes  {get{return _lanes.Count;}}
         public void Simulate()
         {
+            tick += tick < 15?1:-15;
             for(int i=0;i< _lanes.Count && _lanes.Count > 0;i++)
                 for(int j=0;j<_trafficControllers.Count && _trafficControllers.Count>0;j++)
                     _lanes[i].Simulate(_trafficControllers[j]);
