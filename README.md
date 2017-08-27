@@ -22,8 +22,9 @@ Visualize intersection in terms of lanes, controller status and traffic accumila
 ## Bugs
 * <strike>Currently, simulator is allowing traffic in the wrong direction </strike>
 
-## Current Developement 
-* Writing first agent to control traffic 
+## Current Developement
+* Spawn FourDirectionIntersection into a Smart4WayIntersection   
+* Writing first agent to control Smart4WayIntersection
 
 ## Future Developement
 * Collision detection 
