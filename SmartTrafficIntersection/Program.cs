@@ -13,7 +13,7 @@ namespace SmartTrafficIntersection
             Console.WriteLine(String.Format("Initial Wait Time: {0}",intersection.TotalWaitTime()));
             for(int tick=0;tick < 16; tick++)
             {
-                intersection.Control(rnd.Next(0xff));
+                intersection.Control(16);//rnd.Next(0xff));
                 intersection.Simulate();
                 Console.WriteLine(String.Format("[{0}] : WT : {1} : State {2}",
                 tick,
