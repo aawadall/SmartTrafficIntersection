@@ -117,17 +117,19 @@ Visualize intersection in terms of lanes, controller status and traffic accumila
 
 ## [Issues](https://github.com/aawadall/SmartTrafficIntersection/issues)
 * <strike>Currently, simulator is allowing traffic in the wrong direction </strike>
-* Translating States from Simulation Space to AI Agent Space
-* Translating Actions from AI Agent Space to Simulation Space
+* <strike>Translating States from Simulation Space to AI Agent Space</strike>
+* <strike>Translating Actions from AI Agent Space to Simulation Space</strike>
+* General Performance Issue, running 1600 ticks takes more than 15 minuts.
 
 ## Current Developement
 * <strike> Spawn FourDirectionIntersection into a Smart4WayIntersection  </strike> 
 * <strike>Writing first agent to control Smart4WayIntersection</strike>
 * Stabilizing AI Agent 
+* Bug fixes 
 
 ## Future Developement
 * Collision detection 
 * Bad driver simulator
 * Include Pedestrians to the simulated model 
 * Unconstrained State/Action Space
-
+* TD(&lambda;) policy 
