@@ -4,7 +4,7 @@ Another AI toy project; Of a traffic intersection controlled by an AI agent to o
 ## How to use it
 ### on Linux
 #### Install Mono .NET framework on your machine
-Check [here][1]   
+Check [here](http://www.mono-project.com/download/#download-lin) 
 
 #### Download/Clone the project at your Machine 
 Create a directory where you want to have your code 
@@ -95,4 +95,3 @@ Visualize intersection in terms of lanes, controller status and traffic accumila
 * Include Pedestrians to the simulated model 
 * Unconstrained State/Action Space
 
-[1] http://www.mono-project.com/download/#download-lin
