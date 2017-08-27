@@ -21,11 +21,11 @@ Visualize intersection in terms of lanes, controller status and traffic accumila
 
 ## Bugs
 * <strike>Currently, simulator is allowing traffic in the wrong direction </strike>
-
+* Translating States from Simulation Space to AI Agent Space
 ## Current Developement
-* Spawn FourDirectionIntersection into a Smart4WayIntersection   
-* Writing first agent to control Smart4WayIntersection
-
+* <strike> Spawn FourDirectionIntersection into a Smart4WayIntersection  </strike> 
+* <strike>Writing first agent to control Smart4WayIntersection</strike>
+* Stabilizing AI Agent 
 ## Future Developement
 * Collision detection 
 * Bad driver simulator

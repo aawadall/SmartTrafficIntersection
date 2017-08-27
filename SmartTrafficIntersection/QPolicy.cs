@@ -12,9 +12,11 @@ namespace SmartTrafficIntersection
 
         public override void Learn(int state1, int state2, int action, double reward)
         {
+            Console.WriteLine(String.Format("Inside Learn, S {0} S' {1} a {2}",state1,state2,action));
             double maxState = _q[state2,0];
             for(int i=0;i<_actions;i++)
                 maxState = _q[state2,i] > maxState ? _q[state2,i] : maxState;
+            Console.WriteLine(String.Format("Maximum Q For State [{0}] : {1}",state2,maxState));
             _q[state1,action] += _alpha * (reward + _gamma * maxState - _q[state1,action]);
         }
 
