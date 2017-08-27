@@ -4,7 +4,7 @@ Another AI toy project; Of a traffic intersection controlled by an AI agent to o
 ## How to use it
 ### on Linux
 #### Install Mono .NET framework on your machine
-Check here http://www.mono-project.com/download/#download-lin 
+Check [here](http://www.mono-project.com/download/#download-lin) 
 
 #### Download/Clone the project at your Machine 
 Create a directory where you want to have your code 
