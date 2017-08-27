@@ -89,13 +89,15 @@ where v are all vehicles or a pedistrians, currently linedup in this lane.
 Such wait time is used as a cost function used by the agent to minimize.  
 
 ### Traffic Controllers 
-Traffic Controllers are general case of a traffic light in an intersection. 
+Traffic Controllers are general case of a traffic light in an intersection. A traffic controller can be thought of as a pair boolean vectors; each vector has an element for direction, such that 
 
-Current model is considering a simple binary traffic light only, with two states {_False_ &rarr; _Red_,_True_ &rarr; _Green_}.
+<a href="https://www.codecogs.com/eqnedit.php?latex=\mathbf{c_k}&space;=&space;\left(c_k^p&space;,&space;c_k^p&space;\right)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathbf{c_k}&space;=&space;\left(c_k^p&space;&space;c_k^s&space;\right)" title="\mathbf{c_k} = \left(c_k^p  c_k^s \right)" /></a>
 
-In addition to states, a traffic controller has a primary direction (_d<sup>(p)</sup>_) associated with it, and a set of secondary directions (_d<sup>(s)</sup><sub>i</sub>_ &in; _D<sup>(s)</sup>_ ), such that _d<sup>(p)</sup>_ is guaranteed to move safely without bothering about incoming traffic, while all _d<sup>(s)</sup><sub>i</sub>_ &in; _D<sup>(s)</sup>_ are allowed to move but they should yied to incoming traffic from the direction _d<sup>(p)</sup>_. e.g. left turn when there is incoming traffic from opposite direction, or right turn when there are pedistrians crossing.
+First vector <a href="https://www.codecogs.com/eqnedit.php?latex=c_k^p" target="_blank"><img src="https://latex.codecogs.com/gif.latex?c_k^p" title="c_k^p" /></a>, is the set of directions allowed to have non risky traffic flowwing, e.g. northbound and southbound traffic are allowed to flow freely. While the second vector <a href="https://www.codecogs.com/eqnedit.php?latex=c_k^s" target="_blank"><img src="https://latex.codecogs.com/gif.latex?c_k^s" title="c_k^s" /></a> is the secondary traffic allowed as per this controller. It means that the traffic of this direction can flow after yielding for incoming traffic from other primary directions, if collision is detected. e.g. left turn wen no dedicated controller for left is green, or right turn, when pedistrians are allowed to cross.
 
-Secondary direction can be handled by checking if all incoming lanes from opposite direction are empty. _this feature is not handled yet_
+Current model is considering a simple binary traffic light only, with two states; true for green and false for red; 
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=c_k^p^{(i)}&space;\in&space;\left&space;\{&space;true,&space;false&space;\right&space;\},c_k^s^{(i)}&space;\in&space;\left&space;\{&space;true,&space;false&space;\right&space;\}&space;\forall&space;i" target="_blank"><img src="https://latex.codecogs.com/gif.latex?c_k^p^{(i)}&space;\in&space;\left&space;\{&space;true,&space;false&space;\right&space;\},c_k^s^{(i)}&space;\in&space;\left&space;\{&space;true,&space;false&space;\right&space;\}&space;\forall&space;i" title="c_k^p^{(i)} \in \left \{ true, false \right \},c_k^s^{(i)} \in \left \{ true, false \right \} \forall i" /></a>
 
 ## Components
 ### Simulation Component
