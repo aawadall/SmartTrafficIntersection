@@ -19,5 +19,10 @@ namespace SmartTrafficIntersection
         {
             return _policy.GetBestMove(state);
         }
+
+        public void Report()
+        {
+            _policy.Report();
+        }
     }
 }

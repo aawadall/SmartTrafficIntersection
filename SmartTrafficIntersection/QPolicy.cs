@@ -12,11 +12,11 @@ namespace SmartTrafficIntersection
 
         public override void Learn(int state1, int state2, int action, double reward)
         {
-            Console.WriteLine(String.Format("Inside Learn, S {0} S' {1} a {2}",state1,state2,action));
+            //Console.WriteLine(String.Format("Inside Learn, S {0} S' {1} a {2}",state1,state2,action));
             double maxState = _q[state2,0];
             for(int i=0;i<_actions;i++)
                 maxState = _q[state2,i] > maxState ? _q[state2,i] : maxState;
-            Console.WriteLine(String.Format("Maximum Q For State [{0}] : {1}",state2,maxState));
+           // Console.WriteLine(String.Format("Maximum Q For State [{0}] : {1}",state2,maxState));
             _q[state1,action] += _alpha * (reward + _gamma * maxState - _q[state1,action]);
         }
 
@@ -35,6 +35,30 @@ namespace SmartTrafficIntersection
                 maxState = _q[state,i] > maxState ? _q[state,i] : maxState;
             }
             return index;
+        }
+
+        public override void Report()
+        {
+            // Print Q Matrix
+            for(int i=0;i<_states;i++)
+            {
+                Console.Write(String.Format(
+                    "[{0}]\t",i
+                ));
+                for(int j=0;j<_actions;j++)
+                    Console.Write(String.Format(
+                        "\t{0}",
+                        _q[i,j]
+                    ));
+                Console.WriteLine();
+            }
+            // Print Alpha, Gamma, Epsilon
+            Console.WriteLine(String.Format(
+                "alpha: {0}\tgamma: {1}\tepsilon{2}",
+                _alpha,
+                _gamma,
+                _epsilon
+            ));
         }
     }
 }

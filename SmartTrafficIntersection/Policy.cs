@@ -25,5 +25,10 @@ namespace SmartTrafficIntersection
         {
             return 0;
         }
+
+        public virtual void Report()
+        {
+
+        }
     }
 }

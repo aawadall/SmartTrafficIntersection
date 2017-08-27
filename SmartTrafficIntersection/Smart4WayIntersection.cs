@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -17,6 +18,7 @@ namespace SmartTrafficIntersection
 
         protected int MapState(int state)
         {
+            //Console.WriteLine(String.Format("Inside Map State {0}",state));
             int tick = state & 0xf; 
             state = state >> 4;
             int accum = 0;
@@ -26,7 +28,13 @@ namespace SmartTrafficIntersection
                     accum++;
                 state = state >> 1;
             }
-            state = tick + accum << 4; 
+            state = tick + (accum << 4); 
+            /* 
+            Console.WriteLine(String.Format("Translated State : {0}, from Accum:{1} & tick:{2}",
+            state,
+            accum,
+            tick));
+            */
             return state;
         } // Maps a state from a long format to a numeric format
 
@@ -45,5 +53,9 @@ namespace SmartTrafficIntersection
             _agent.Learn(state1, state2, action, reward);
         } // Control Signal is a bitmap
 
+        public void Report()
+        {
+            _agent.Report();
+        } // Report Policy 
     }
 }
