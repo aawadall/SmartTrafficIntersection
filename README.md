@@ -115,7 +115,7 @@ Visualize intersection in terms of lanes, controller status and traffic accumila
 * General Purpose Intersection object 
 * Four Way intersection (with only primary traffic available, and no left turns)
 
-## Issues
+## [Issues](https://github.com/aawadall/SmartTrafficIntersection/issues)
 * <strike>Currently, simulator is allowing traffic in the wrong direction </strike>
 * Translating States from Simulation Space to AI Agent Space
 * Translating Actions from AI Agent Space to Simulation Space
