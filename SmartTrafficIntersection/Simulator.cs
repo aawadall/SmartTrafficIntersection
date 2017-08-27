@@ -56,6 +56,7 @@ namespace SmartTrafficIntersection
         public void SimulateTraffic(bool WayOut, bool RiskyTraffic)
         {
             Wait();
+            Console.Write("Simulating Traffic : ");
             // If there is no way Out, accumilate traffic, otherwise have ins and outs
             if(WayOut)
             {
@@ -66,14 +67,22 @@ namespace SmartTrafficIntersection
                 }
                 TrafficOut = _rnd.Next(TrafficOut);
                   
-                    for(int i=0;i<TrafficOut && _waitTime.Count >0;i++)
-                        _waitTime.Dequeue();
+                for(int i=0;i<TrafficOut && _waitTime.Count >0;i++)
+                {
+                    _waitTime.Dequeue();
+                    Console.Write("-");
+                }
+                
             }
 
             int TrafficIn = _rnd.Next(_inFlow);
             
-                for(int i=0;i<TrafficIn;i++)
-                    _waitTime.Enqueue(0);
+            for(int i=0;i<TrafficIn;i++)
+            {
+                _waitTime.Enqueue(0);
+                Console.Write("+");
+            }
+            Console.WriteLine();        
         }
     }
 }

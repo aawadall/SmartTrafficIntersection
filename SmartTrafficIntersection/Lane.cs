@@ -1,4 +1,6 @@
-﻿namespace SmartTrafficIntersection
+﻿using System;
+
+namespace SmartTrafficIntersection
 {
     // General Lane Superclass
     public class Lane : ILane
@@ -30,6 +32,7 @@
         // Simulator 
         public void Simulate(TrafficController controller)
         {
+            Console.Write(String.Format("{0} : ",_laneName));
             _sim.SimulateTraffic(controller.IsAllowed(_direction), controller.IsRisky(_direction));
         }
 

@@ -21,10 +21,10 @@ namespace SmartTrafficIntersection
             // Define Lanes
             _lanes = new List<Lane>()
             {
-                new Lane("Lane 0 : Southbound",_directions[0]),
-                new Lane("Lane 1 : Wesboundt" ,_directions[1]),
-                new Lane("Lane 2 : Northbound",_directions[2]),
-                new Lane("Lane 3 : Eastbound" ,_directions[3]),
+                new Lane("Lane 0 : Southbound",_directions[0],5,5,5),
+                new Lane("Lane 1 : Wesboundt" ,_directions[1],5,5,5),
+                new Lane("Lane 2 : Northbound",_directions[2],5,5,5),
+                new Lane("Lane 3 : Eastbound" ,_directions[3],5,5,5),
             };
             // Define Traffic Controllers 
             _trafficControllers = new List<TrafficController>()
