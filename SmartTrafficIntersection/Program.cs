@@ -8,7 +8,7 @@ namespace SmartTrafficIntersection
     {
         public static void Main(string[] args)
         {
-            int lifeTime = 1600;
+            int lifeTime = 300;
             Random rnd = new Random();
             Smart4WayIntersection intersection = new Smart4WayIntersection();
             int[] WaitTime = new int[lifeTime]; 

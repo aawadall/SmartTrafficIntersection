@@ -4,7 +4,7 @@ namespace SmartTrafficIntersection
     public class QPolicy : Policy
     {
         protected double[,] _q;
-        protected double _epsilon = 0.01;
+        protected double _epsilon = 0.001;
         public QPolicy(int states, int actions, double alpha, double gamma) : base(states, actions, alpha, gamma)
         {
             _q = new double[_states,_actions];
