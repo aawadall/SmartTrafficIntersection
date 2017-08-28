@@ -2,6 +2,15 @@
 Another AI toy project; Of a traffic intersection controlled by an AI agent to optimize traffic flow and avoid collission. 
 
 ![Sample 8 lanes intersection](https://github.com/aawadall/SmartTrafficIntersection/blob/master/GRrTr.png)
+
+_I would love to hear your feedback, especially bugs found in the code and suggested features._ 
+
+_Alpha release is scheduled at the end of September 2017, while the Beta is scheduled at End of October. I would love to stuff in as much as possible before moving on to the next project._ 
+
+_Also, if someone can help me out in the visualization part, that would be awsome!_
+
+_Thanks_ 
+
 ## How to use it
 ### on Linux
 #### Install Mono .NET framework on your machine
