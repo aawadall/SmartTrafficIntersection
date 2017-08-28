@@ -2,6 +2,15 @@
 Another AI toy project; Of a traffic intersection controlled by an AI agent to optimize traffic flow and avoid collission. 
 
 ![Sample 8 lanes intersection](https://github.com/aawadall/SmartTrafficIntersection/blob/master/GRrTr.png)
+
+_I would love to hear your feedback, especially bugs found in the code and suggested features._ 
+
+_Alpha release is scheduled at the end of September 2017, while the Beta is scheduled at End of October. I would love to stuff in as much as possible before moving on to the next project._ 
+
+_Also, if someone can help me out in the visualization part, that would be awsome!_
+
+_Thanks_ 
+
 ## How to use it
 ### on Linux
 #### Install Mono .NET framework on your machine
@@ -135,3 +144,8 @@ Visualize intersection in terms of lanes, controller status and traffic accumila
 * Include Pedestrians to the simulated model 
 * Unconstrained State/Action Space
 * TD(&lambda;) policy 
+
+## Message to Students
+We appreciate your visit to this repo, and feel proud that you landed here.
+We have a request.. PLEASE dn NOT copy code from this repo and paste it into your coursework assignment. 
+
