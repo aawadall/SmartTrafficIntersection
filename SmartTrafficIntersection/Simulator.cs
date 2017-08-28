@@ -49,7 +49,7 @@ namespace SmartTrafficIntersection
                     for(int i=0;i<_waitTime.Count;i++)
                         Wait += _waitTime.ElementAt(i);   
                 }
-                return Wait;
+                return _waitTime.Count==0?0: (int)( (double)Wait/(double) _waitTime.Count);
             }
         }
 

@@ -17,6 +17,7 @@ namespace SmartTrafficIntersection
         public void Simulate()
         {
             tick += tick < 15?1:-15;
+            
             for(int i=0;i< _lanes.Count && _lanes.Count > 0;i++)
                 for(int j=0;j<_trafficControllers.Count && _trafficControllers.Count>0;j++)
                     _lanes[i].Simulate(_trafficControllers[j]);
@@ -28,7 +29,7 @@ namespace SmartTrafficIntersection
             {
                 WaitTime+= _lanes[i].WaitTime;
             }
-            return WaitTime;
+            return _lanes.Count==0?0:(int)( (double)WaitTime/_lanes.Count);
         }
         public virtual void Control(int controlSignal)
         {
@@ -45,9 +46,15 @@ namespace SmartTrafficIntersection
            for(int j=0;j<_trafficControllers.Count && _trafficControllers.Count>0;j++)
            {
            if( _trafficControllers[j].Allowed)
-                State |= 1;
-            State = State << 1;
+                {
+                    //Console.WriteLine("Allowed");
+                    State += 2^j;
+                }
+            //State = State << 1;
+            //Console.WriteLine(String.Format("State Build : {0}",
+            //State));
            }
+           State = (State << 4) + tick;
            return State; 
         } // Current State of the Intersection in terms of Traffic Controllers 
 

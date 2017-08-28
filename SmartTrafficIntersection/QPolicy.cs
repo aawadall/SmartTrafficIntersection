@@ -4,7 +4,7 @@ namespace SmartTrafficIntersection
     public class QPolicy : Policy
     {
         protected double[,] _q;
-        protected double _epsilon = 0.001;
+        protected double _epsilon = 0.0;
         public QPolicy(int states, int actions, double alpha, double gamma) : base(states, actions, alpha, gamma)
         {
             _q = new double[_states,_actions];
@@ -47,7 +47,7 @@ namespace SmartTrafficIntersection
                 ));
                 for(int j=0;j<_actions;j++)
                     Console.Write(String.Format(
-                        "\t{0}",
+                        "\t{0:0.00}",
                         _q[i,j]
                     ));
                 Console.WriteLine();

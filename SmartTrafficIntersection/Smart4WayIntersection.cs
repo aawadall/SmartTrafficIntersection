@@ -19,23 +19,25 @@ namespace SmartTrafficIntersection
         protected int MapState(int state)
         {
             //Console.WriteLine(String.Format("Inside Map State {0}",state));
+            return state;
             int tick = state & 0xf; 
             state = state >> 4;
             int accum = 0;
             for(int i=0;i<4;i++)
             {
                 if((state & 1) == 1)
-                    accum++;
-                state = state >> 1;
+                    accum += 2^i;
+                 state = state >> 1;
             }
-            state = tick + (accum << 4); 
+            
             /* 
-            Console.WriteLine(String.Format("Translated State : {0}, from Accum:{1} & tick:{2}",
+            Console.WriteLine(String.Format("Translating State : {0}\t, from Accum:{1} \t& tick:{2} \t-> {3}",
             state,
             accum,
-            tick));
-            */
-            return state;
+            tick,
+            tick + (accum << 4)));
+             */
+            //return tick + (accum << 4);
         } // Maps a state from a long format to a numeric format
 
         protected int MapAction(int action)

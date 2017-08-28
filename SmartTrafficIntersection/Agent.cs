@@ -6,8 +6,8 @@ namespace SmartTrafficIntersection
 
         public Agent(int states, int actions)
         {
-            double _alpha = 0.1;
-            double _gamma = 0.99;
+            double _alpha = 0.23;
+            double _gamma = 0.94;
 
             _policy = new QPolicy(states, actions, _alpha, _gamma);
         }
