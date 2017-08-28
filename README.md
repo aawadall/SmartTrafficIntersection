@@ -144,3 +144,8 @@ Visualize intersection in terms of lanes, controller status and traffic accumila
 * Include Pedestrians to the simulated model 
 * Unconstrained State/Action Space
 * TD(&lambda;) policy 
+
+## Message to Students
+We appreciate your visit to this repo, and feel proud that you landed here.
+We have a request.. PLEASE dn NOT copy code from this repo and paste it into your coursework assignment. 
+
