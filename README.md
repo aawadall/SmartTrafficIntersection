@@ -136,13 +136,24 @@ Expected End of September 2017
 * <strike>Writing first agent to control Smart4WayIntersection</strike>
 * <strike>Stabilizing AI Agent </strike>
 * <strike>Bug fixes </strike>
-* Visualization 
+* Visualization on a desktop application 
+* Fixing known issues 
 
 ### Beta Release 
 Expected End of October 2017
+* User control traffic simulation 
+* User control AI parameters 
+* Learning Analytics 
+* General direction/lane association, using vectors of booleans 
+* Performance improvement 
+* Fixing known issues 
 
 ### Stable Release 1.0
 Expected End of November 2017
+* Web version of the application 
+* TD(&lambda;) agent 
+* Read configuration of intersection from a file/database 
+* Fixing known issues 
 
 ## Future Developement
 ### Collision detection 
