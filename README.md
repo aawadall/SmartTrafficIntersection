@@ -109,22 +109,19 @@ Current model is considering a simple binary traffic light only, with two states
 <a href="https://www.codecogs.com/eqnedit.php?latex=c_k^p^{(i)}&space;\in&space;\left&space;\{&space;true,&space;false&space;\right&space;\},c_k^s^{(i)}&space;\in&space;\left&space;\{&space;true,&space;false&space;\right&space;\}&space;\forall&space;i" target="_blank"><img src="https://latex.codecogs.com/gif.latex?c_k^p^{(i)}&space;\in&space;\left&space;\{&space;true,&space;false&space;\right&space;\},c_k^s^{(i)}&space;\in&space;\left&space;\{&space;true,&space;false&space;\right&space;\}&space;\forall&space;i" title="c_k^p^{(i)} \in \left \{ true, false \right \},c_k^s^{(i)} \in \left \{ true, false \right \} \forall i" /></a>
 
 ## Components
+This project is planned to have the following components:
+
 ### Simulation Component
 Lanes, Traffic Controllers, and Intersections, This should simulate traffic in a given intersection configuration, with the optoin to manually control the controller behaviour if dynamic (i.e. not a stop sign or a roundabout)
+<Complete>
 
 ### AI Component
 This is a Reinforcement Learning AI agent controlling traffic controller to optimize metrics 
+<Complete>
 
 ### Visualiztion Component  
 Visualize intersection in terms of lanes, controller status and traffic accumilation 
-
-## Finished Objects
-* Traffic Simulator
-* Traffic Controller {Stop Sign, raffic Light, etc.} General class now
-* Traffic Direction; a conceptual object used to describe traffic flow in an intersection and to link lanes to traffic controllers 
-* Lane, where cars line up. Controlled by the Traffic Controller, Each lane has its own parameterized traffic simulator  
-* General Purpose Intersection object 
-* Four Way intersection (with only primary traffic available, and no left turns)
+<Pending>
 
 ## [Issues](https://github.com/aawadall/SmartTrafficIntersection/issues)
 * <strike>Currently, simulator is allowing traffic in the wrong direction </strike>
@@ -133,17 +130,39 @@ Visualize intersection in terms of lanes, controller status and traffic accumila
 * General Performance Issue, running 1600 ticks takes more than 15 minuts.
 
 ## Current Developement
+### Alpha Release 
+Expected End of September 2017
 * <strike> Spawn FourDirectionIntersection into a Smart4WayIntersection  </strike> 
 * <strike>Writing first agent to control Smart4WayIntersection</strike>
-* Stabilizing AI Agent 
-* Bug fixes 
+* <strike>Stabilizing AI Agent </strike>
+* <strike>Bug fixes </strike>
+* Visualization 
+
+### Beta Release 
+Expected End of October 2017
+
+### Stable Release 1.0
+Expected End of November 2017
 
 ## Future Developement
-* Collision detection 
-* Bad driver simulator
-* Include Pedestrians to the simulated model 
-* Unconstrained State/Action Space
-* TD(&lambda;) policy 
+### Collision detection 
+for a direction to detect if incoming traffic is floowing, and hence detect potential collision and simulate a collision in the future for an unconstrained ystem
+
+### Bad driver simulator
+Simulate a driver driving slowly, too fast, or running a red light 
+
+### Include Pedestrians to the simulated model 
+an extra lane, with a dedicated direction 
+
+### Unconstrained State/Action Space
+Alow the controller to pick wahtever actions, even if the result might end up in a simulated collision. this will allow the system to come up with creative solutions
+
+
+### TD(lambda)
+TD(&lambda;) policy 
+
+### Web Application
+port the solution to a web application and allow users to play with it
 
 ## Message to Students
 We appreciate your visit to this repo, and feel proud that you landed here.
