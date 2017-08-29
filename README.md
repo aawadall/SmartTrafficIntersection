@@ -139,7 +139,8 @@ Expected End of September 2017
 * Visualization on a desktop application 
 * Fixing known issues 
 
-### Beta Release 
+## Future Releases 
+### Beta  
 Expected End of October 2017
 * User control traffic simulation 
 * User control AI parameters 
@@ -155,7 +156,7 @@ Expected End of November 2017
 * Read configuration of intersection from a file/database 
 * Fixing known issues 
 
-## Future Developement
+## Future Work
 ### Collision detection 
 for a direction to detect if incoming traffic is floowing, and hence detect potential collision and simulate a collision in the future for an unconstrained ystem
 
