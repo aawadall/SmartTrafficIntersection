@@ -2,7 +2,7 @@ namespace SmartTrafficIntersection
 {
     public class Agent : IAgent
     {
-        private Policy _policy;
+        private readonly Policy _policy;
 
         public Agent(int states, int actions)
         {
