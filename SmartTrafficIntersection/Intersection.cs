@@ -10,7 +10,7 @@ namespace SmartTrafficIntersection
 		protected List<Direction> _directions;
 		protected List<TrafficController> _trafficControllers;
         protected List<Lane> _lanes;
-        protected int tick = 0;
+        protected int tick;
 
         public int Directons {get{return _directions.Count;}} 
         public int Lanes  {get{return _lanes.Count;}}
