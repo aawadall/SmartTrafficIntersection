@@ -10,7 +10,7 @@ namespace SmartTrafficIntersection
         public FourDirectionIntersection() 
         {
             // Define Directions
-            _directions = new List<Direction>()
+            _directions = new List<Direction>
             {
                 new Direction("Direction 0: Northbound"),
                 new Direction("Direction 1: Eastbound"),
@@ -21,7 +21,7 @@ namespace SmartTrafficIntersection
             // Define Lanes
             int inFlux = 5;
             int outFlux =  inFlux * 4 * 4;
-            _lanes = new List<Lane>()
+            _lanes = new List<Lane>
             {
                 new Lane("Lane 0 : Southbound",_directions[0],inFlux,outFlux,0),
                 new Lane("Lane 1 : Wesboundt" ,_directions[1],inFlux,outFlux,0),
@@ -29,7 +29,7 @@ namespace SmartTrafficIntersection
                 new Lane("Lane 3 : Eastbound" ,_directions[3],inFlux,outFlux,0),
             };
             // Define Traffic Controllers 
-            _trafficControllers = new List<TrafficController>()
+            _trafficControllers = new List<TrafficController>
             {
                 new TrafficController("Light 0 : Southbound",_directions[0]),
                 new TrafficController("Light 1 : Westbound" ,_directions[1]),
