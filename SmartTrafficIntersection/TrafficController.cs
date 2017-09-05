@@ -36,7 +36,8 @@ namespace SmartTrafficIntersection
             return null;
         } // What direction is my incoming traffic?
         public void ControlTraffic(int ControlSignal){
-            
+            // Not implemented yet
+            throw new NotImplementedException();
         } // Control Traffic Controller
 
         public void Flip()
