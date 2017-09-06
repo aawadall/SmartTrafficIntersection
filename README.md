@@ -3,6 +3,7 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/69d126b53d6144aaa5b622e926f0cf2a)](https://www.codacy.com/app/aawadall/SmartTrafficIntersection?utm_source=github.com&utm_medium=referral&utm_content=aawadall/SmartTrafficIntersection&utm_campaign=badger)
 [![Kiuwan](https://www.kiuwan.com/github/aawadall/SmartTrafficIntersection/badges/security.svg)](https://www.kiuwan.com/github/aawadall/SmartTrafficIntersection)
 [![Kiuwan](https://www.kiuwan.com/github/aawadall/SmartTrafficIntersection/badges/quality.svg)](https://www.kiuwan.com/github/aawadall/SmartTrafficIntersection)
+
 Another AI toy project; Of a traffic intersection controlled by an AI agent to optimize traffic flow and avoid collission. 
 
 ![Sample 8 lanes intersection](https://github.com/aawadall/SmartTrafficIntersection/blob/master/GRrTr.png)
