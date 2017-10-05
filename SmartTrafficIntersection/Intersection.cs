@@ -68,10 +68,14 @@ namespace SmartTrafficIntersection
             {
                 _lanes[laneIndex].InFlow += inFlowDelta;
                 if (_lanes[laneIndex].InFlow < 0 )
+		{
                     _lanes[laneIndex].InFlow = 0;
+		}    
                 _lanes[laneIndex].OutFlow += outFlowDelta;
                 if (_lanes[laneIndex].OutFlow < 0 )
+		{
                     _lanes[laneIndex].OutFlow = 0;  
+		}
             }
         } // Alter flow of a lane if exist
     }
