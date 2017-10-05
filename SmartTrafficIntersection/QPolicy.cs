@@ -14,7 +14,9 @@ namespace SmartTrafficIntersection
         {
             double maxState = _q[state2,0];
             for(int i=0;i<_actions;i++)
+            {
                 maxState = _q[state2,i] > maxState ? _q[state2,i] : maxState;
+            }
             _q[state1,action] += _alpha * (reward + _gamma * maxState - _q[state1,action]);
         }
 
