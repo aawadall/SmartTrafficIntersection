@@ -7,7 +7,7 @@ namespace SmartTrafficIntersection
         protected readonly Direction _direction;
         protected readonly Direction _riskyDirection;
         protected readonly string _controllerName;
-        protected bool _allowed = false;
+        protected bool _allowed;
 
         public bool Allowed { get {return _allowed;} set {_allowed = value; }}
 
@@ -30,7 +30,7 @@ namespace SmartTrafficIntersection
             return direction == _riskyDirection;
         } // Is traffic at that direction risky?
         public bool IsIncomingTraffic(IDirection direction){
-            return false;
+            return _allowed;
         } // Is there incoming traffic I have to look after?
         public IDirection IncomingTraffic(IDirection direction){
             return null;
