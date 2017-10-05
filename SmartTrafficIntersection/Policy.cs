@@ -5,7 +5,7 @@ namespace SmartTrafficIntersection
     {
         protected double _alpha;
         protected double _gamma;
-        public static Random rnd = new Random();
+        public const Random rnd = new Random();
         // State Action Space
         protected int _states;
         protected int _actions;
