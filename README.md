@@ -18,6 +18,8 @@ _Thanks_
 
 ## How to use it
 ### on Linux
+_upcoming, I will port this code from mono to .NET Core 2.1_
+
 #### Install Mono .NET framework on your machine
 Check [here](http://www.mono-project.com/download/#download-lin) 
 
