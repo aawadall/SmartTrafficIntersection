@@ -12,9 +12,38 @@ namespace SmartTrafficIntersection
         protected int _outFlow=3;
         protected int _initialTraffic=3;
 
-        public int InFlow { get { return _inFlow;} set  {_inFlow = value; }}
-        public int OutFlow { get { return _outFlow;} set { _outFlow = value; }}
-        public int InitialTraffic { get { return _initialTraffic;} set { _initialTraffic = value; }}
+        public int InFlow 
+            { 
+                get { 
+                    return _inFlow;
+                    } 
+                set  
+                    {
+                    _inFlow = value; 
+                    }
+            }
+        public int OutFlow 
+            { 
+                get 
+                    { 
+                    return _outFlow;
+                    } 
+                set 
+                    { 
+                    _outFlow = value; 
+                    }
+            }
+        public int InitialTraffic 
+            { 
+                get 
+                    { 
+                    return _initialTraffic;
+                    } 
+                set 
+                    { 
+                    _initialTraffic = value; 
+                    }
+            }
 
         public Lane(string name, Direction direction, int inFlow, int outFlow, int initialTraffic)
         {

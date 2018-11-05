@@ -21,8 +21,7 @@ _Thanks_
 ### on Linux
 _upcoming, I will port this code from mono to .NET Core 2.1_
 
-#### Install Mono .NET framework on your machine
-Check [here](http://www.mono-project.com/download/#download-lin) 
+#### Install .NET Core 2.1 on your machine
 
 #### Download/Clone the project at your Machine 
 Create a directory where you want to have your code 
@@ -42,13 +41,17 @@ Go to Code Location
 
 `cd SmartTrafficIntersection`
 
-Compile
+Restore
 
-`mcs -out:Simulator.exe *.cs`
+`dotnet restore`
+
+Build
+
+`dotnet build`
 
 Run
 
-`mono Simulator.exe`
+`dotnet run`
 
 ## Theoritical Model 
 

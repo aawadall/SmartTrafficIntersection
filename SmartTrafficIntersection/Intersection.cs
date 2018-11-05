@@ -30,9 +30,14 @@ namespace SmartTrafficIntersection
         {
             tick += tick < 15?1:-15;
             
-            for(int i = 0 ; i < _lanes.Count && _lanes.Count > 0 ; i++ )
+            for(	int i = 0; 
+	    		i < _lanes.Count && _lanes.Count > 0; 
+			i++ )
 	    {
-                for(int j=0;j<_trafficControllers.Count && _trafficControllers.Count>0;j++)
+                for(	int j = 0;
+			j < _trafficControllers.Count && 
+			_trafficControllers.Count > 0;
+			j++)
 		{
                     _lanes[i].Simulate(_trafficControllers[j]);
 		}
@@ -41,7 +46,10 @@ namespace SmartTrafficIntersection
         public virtual int TotalWaitTime()
         {
             int WaitTime = 0;
-            for(int i=0;i< _lanes.Count && _lanes.Count > 0;i++)
+            for(	int i = 0;
+	    		i < _lanes.Count && 
+			_lanes.Count > 0;
+			i++)
             {
                 WaitTime+= _lanes[i].WaitTime;
             }
