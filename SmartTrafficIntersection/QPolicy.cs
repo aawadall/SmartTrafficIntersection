@@ -13,11 +13,13 @@ namespace SmartTrafficIntersection
         public override void Learn(int state1, int state2, int action, double reward)
         {
             double maxState = _q[state2,0];
-            for(int i=0;i<_actions;i++)
+            for(    int i = 0;
+                    i < _actions;
+                    i++)
             {
                 maxState = _q[state2,i] > maxState ? _q[state2,i] : maxState;
             }
-            _q[state1,action] += _alpha * (reward + _gamma * maxState - _q[state1,action]);
+            _q[state1,action] += _alpha * (reward + (_gamma * maxState) - _q[state1,action]);
         }
 
         public override int GetBestMove(int state)
@@ -31,7 +33,9 @@ namespace SmartTrafficIntersection
             // Normal Q State
             double maxState = _q[state,0];
             int index = 0;
-            for(int i=0;i<_actions;i++)
+            for(    int i = 0;
+                    i < _actions;
+                    i++)
             {
                 index = _q[state,i] > maxState ?i:index;
                 maxState = _q[state,i] > maxState ? _q[state,i] : maxState;
@@ -42,12 +46,16 @@ namespace SmartTrafficIntersection
         public override void Report()
         {
             // Print Q Matrix
-            for(int i=0;i<_states;i++)
+            for(    int i = 0;
+                    i < _states;
+                    i++)
             {
                 Console.Write(String.Format(
                     "[{0}]\t",i
                 ));
-                for(int j=0;j<_actions;j++)
+                for(    int j = 0;
+                        j < _actions;
+                        j++)
                 {
                     Console.Write(String.Format(
                         "\t{0:0.00}",
@@ -59,10 +67,7 @@ namespace SmartTrafficIntersection
             // Print Alpha, Gamma, Epsilon
             Console.WriteLine(String.Format(
                 "alpha: {0}\tgamma: {1}\tepsilon{2}",
-                _alpha,
-                _gamma,
-                _epsilon
-            ));
+                _alpha, _gamma, _epsilon));
         }
     }
 }
