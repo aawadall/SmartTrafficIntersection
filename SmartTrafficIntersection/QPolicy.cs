@@ -67,10 +67,7 @@ namespace SmartTrafficIntersection
             // Print Alpha, Gamma, Epsilon
             Console.WriteLine(String.Format(
                 "alpha: {0}\tgamma: {1}\tepsilon{2}",
-                _alpha,
-                _gamma,
-                _epsilon
-            ));
+                _alpha, _gamma, _epsilon));
         }
     }
 }
