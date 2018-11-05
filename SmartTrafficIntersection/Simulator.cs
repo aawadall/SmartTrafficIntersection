@@ -33,7 +33,9 @@ namespace SmartTrafficIntersection
         // Simulation
         public void Wait() // Add one tick to each waiting car
         {
-            for(int i=0;i<_waitTime.Count;i++)
+            for(    int i = 0;
+                    i < _waitTime.Count;
+                    i++)
             {
                 _waitTime.Enqueue(_waitTime.Dequeue()+_tick);
             }
@@ -46,7 +48,9 @@ namespace SmartTrafficIntersection
                 int Wait=0;
                 if(_waitTime.Count > 0)
                 {
-                    for(int i=0;i<_waitTime.Count;i++)
+                    for(    int i = 0;
+                            i < _waitTime.Count;
+                            i++)
                         Wait += _waitTime.ElementAt(i);   
                 }
                 return _waitTime.Count==0?0: (int)( (double)Wait/(double) _waitTime.Count);
@@ -66,16 +70,19 @@ namespace SmartTrafficIntersection
                 }
                 TrafficOut = _rnd.Next(TrafficOut);
                   
-                for(int i=0;i<TrafficOut && _waitTime.Count >0;i++)
+                for(    int i = 0;
+                        i < TrafficOut && _waitTime.Count > 0;
+                        i++)
                 {
                     _waitTime.Dequeue();
-                }
-                
+                }     
             }
 
             int TrafficIn = _rnd.Next(_inFlow);
             
-            for(int i=0;i<TrafficIn;i++)
+            for(    int i = 0;
+                    i < TrafficIn;
+                    i++)
             {
                 _waitTime.Enqueue(0);
             }
