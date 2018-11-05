@@ -7,6 +7,7 @@ namespace SmartTrafficIntersection
     public static class Program
     {
         private static bool _debug; // Code Quality claims it will be initialized with false
+        private static bool _report = true; 
         public static void Main(string[] args)
         {
             int lifeTime = 40960;
@@ -27,8 +28,11 @@ namespace SmartTrafficIntersection
                     Convert.ToString(intersection.State(),16)));
                 }
             }
-            Console.WriteLine("Wait Time Progress");
-            intersection.Report();
+            if (Program._report)
+            {
+                Console.WriteLine("Wait Time Progress");
+                intersection.Report();
+            }
         }
     }
 }
