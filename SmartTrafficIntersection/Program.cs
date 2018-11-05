@@ -4,7 +4,6 @@ using System.Linq;
 
 namespace SmartTrafficIntersection
 {
-    
     public static class Program
     {
         private static bool _debug; // Code Quality claims it will be initialized with false
