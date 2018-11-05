@@ -11,8 +11,7 @@ namespace SmartTrafficIntersection
         public static void Main(string[] args)
         {
             int lifeTime = 40960;
-            Random rnd = new Random();
-            
+                        
             Smart4WayIntersection intersection = new Smart4WayIntersection();
             int[] WaitTime = new int[lifeTime]; 
             Console.WriteLine($"Initial Wait Time: {0}",intersection.TotalWaitTime());
