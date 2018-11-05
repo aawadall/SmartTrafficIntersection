@@ -50,7 +50,9 @@ namespace SmartTrafficIntersection
         public virtual void Control(int controlSignal)
         {
             // rightmost bit is bit 0
-            for(int j=0;j<_trafficControllers.Count && _trafficControllers.Count>0;j++)
+           for(	int j = 0;
+	    	j<_trafficControllers.Count && _trafficControllers.Count > 0;
+		j++)
             {
                 _trafficControllers[j].Allowed = (controlSignal & 1) == 1;
                 controlSignal = controlSignal >> 1;
@@ -59,16 +61,16 @@ namespace SmartTrafficIntersection
         public  int State(){
            // rightmost bit is bit 0
            int State = 0;
-           for(int j=0;j<_trafficControllers.Count && _trafficControllers.Count>0;j++)
+           for(	int j = 0;
+	   	j < _trafficControllers.Count && _trafficControllers.Count > 0;
+		j++)
            {
            if( _trafficControllers[j].Allowed)
                 {
                     //Console.WriteLine("Allowed");
                     State += 2^j;
                 }
-            //State = State << 1;
-            //Console.WriteLine(String.Format("State Build : {0}",
-            //State));
+
            }
            State = (State << 4) + tick;
            return State; 
