@@ -7,7 +7,7 @@ namespace SmartTrafficIntersection
     
     public static class Program
     {
-        private static bool _debug = false;
+        private static bool _debug; // Code Quality claims it will be initialized with false
         public static void Main(string[] args)
         {
             int lifeTime = 40960;
