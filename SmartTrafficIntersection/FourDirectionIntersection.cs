@@ -20,7 +20,7 @@ namespace SmartTrafficIntersection
             
             // Define Lanes
             int inFlux = 5;
-            int outFlux =  inFlux * 4 * 4;
+            int outFlux =  inFlux * 6 * 5;
             _lanes = new List<Lane>
             {
                 new Lane("Lane 0 : Southbound",_directions[0],inFlux,outFlux,0),

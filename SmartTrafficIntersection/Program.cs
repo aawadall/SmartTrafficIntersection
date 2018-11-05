@@ -15,7 +15,7 @@ namespace SmartTrafficIntersection
             
             Smart4WayIntersection intersection = new Smart4WayIntersection();
             int[] WaitTime = new int[lifeTime]; 
-            Console.WriteLine(String.Format("Initial Wait Time: {0}",intersection.TotalWaitTime()));
+            Console.WriteLine($"Initial Wait Time: {0}",intersection.TotalWaitTime());
             for(int tick=0;tick < lifeTime; tick++)
             {
                 intersection.Control();
