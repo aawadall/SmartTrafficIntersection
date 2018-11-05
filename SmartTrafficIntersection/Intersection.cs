@@ -12,8 +12,20 @@ namespace SmartTrafficIntersection
         protected List<Lane> _lanes;
         protected int tick;
 
-        public int Directons {get{return _directions.Count;}} 
-        public int Lanes  {get{return _lanes.Count;}}
+        public int Directons 
+		{
+			get
+			{
+				return _directions.Count;
+			}
+		} 
+        public int Lanes  
+		{
+			get
+			{
+				return _lanes.Count;
+			}
+		}
         public void Simulate()
         {
             tick += tick < 15?1:-15;
