@@ -134,39 +134,6 @@ This is a Reinforcement Learning AI agent controlling traffic controller to opti
 Visualize intersection in terms of lanes, controller status and traffic accumilation 
 <Pending>
 
-## [Issues](https://github.com/aawadall/SmartTrafficIntersection/issues)
-* <strike>Currently, simulator is allowing traffic in the wrong direction </strike>
-* <strike>Translating States from Simulation Space to AI Agent Space</strike>
-* <strike>Translating Actions from AI Agent Space to Simulation Space</strike>
-* General Performance Issue, running 1600 ticks takes more than 15 minuts.
-
-## Current Developement
-### Alpha Release 
-Expected End of September 2017
-* <strike> Spawn FourDirectionIntersection into a Smart4WayIntersection  </strike> 
-* <strike>Writing first agent to control Smart4WayIntersection</strike>
-* <strike>Stabilizing AI Agent </strike>
-* <strike>Bug fixes </strike>
-* Visualization on a desktop application 
-* Fixing known issues 
-
-## Future Releases 
-### Beta  
-Expected End of October 2017
-* User control traffic simulation 
-* User control AI parameters 
-* Learning Analytics 
-* General direction/lane association, using vectors of booleans 
-* Performance improvement 
-* Fixing known issues 
-
-### Stable Release 1.0
-Expected End of November 2017
-* Web version of the application 
-* TD(&lambda;) agent 
-* Read configuration of intersection from a file/database 
-* Fixing known issues 
-
 ## Future Work
 ### Collision detection 
 for a direction to detect if incoming traffic is floowing, and hence detect potential collision and simulate a collision in the future for an unconstrained ystem
