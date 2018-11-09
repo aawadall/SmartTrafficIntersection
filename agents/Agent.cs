@@ -1,4 +1,4 @@
-namespace SmartTrafficIntersection
+namespace SmartTrafficIntersection.agents
 {
     public class Agent : IAgent
     {

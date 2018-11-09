@@ -2,6 +2,7 @@
 using System.Linq;
 
 namespace SmartTrafficIntersection
+          
 {
     // Simple 4 Directions Intersection (N, W, S, E)
     public class FourDirectionIntersection : Intersection

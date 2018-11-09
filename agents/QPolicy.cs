@@ -1,5 +1,5 @@
 using System;
-namespace SmartTrafficIntersection
+namespace SmartTrafficIntersection.agents
 {
     public class QPolicy : Policy
     {
