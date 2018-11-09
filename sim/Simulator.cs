@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace SmartTrafficIntersection
+namespace SmartTrafficIntersection.sim
 {
     // Simulates Traffic 
     public class Simulator

@@ -1,5 +1,5 @@
 using System;
-namespace SmartTrafficIntersection
+namespace SmartTrafficIntersection.sim
 {
     /* Direction Class, 
      * typically a simple class containing only a name, 

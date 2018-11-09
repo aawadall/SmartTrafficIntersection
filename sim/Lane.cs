@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SmartTrafficIntersection
+namespace SmartTrafficIntersection.sim
 {
     // General Lane Superclass
     public class Lane : ILane

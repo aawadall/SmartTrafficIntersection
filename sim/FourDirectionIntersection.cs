@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace SmartTrafficIntersection
+namespace SmartTrafficIntersection.sim
           
 {
     // Simple 4 Directions Intersection (N, W, S, E)

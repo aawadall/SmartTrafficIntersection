@@ -1,4 +1,4 @@
-﻿namespace SmartTrafficIntersection
+﻿namespace SmartTrafficIntersection.sim
 {
     // Nothing interesting here yet
     public interface IIntersection

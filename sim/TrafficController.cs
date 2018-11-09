@@ -1,6 +1,6 @@
 using System;
 
-namespace SmartTrafficIntersection
+namespace SmartTrafficIntersection.sim
 {
     // Traffic Controller Interface 
     // This is a gernic conroller that can be a stop sign, a rowndabout, a traffic light or a human controller 

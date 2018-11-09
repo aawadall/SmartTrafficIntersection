@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace SmartTrafficIntersection
+namespace SmartTrafficIntersection.sim
 {
     // Intersection Superclass
     public class Intersection : IIntersection
