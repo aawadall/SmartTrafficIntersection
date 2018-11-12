@@ -207,6 +207,19 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "agents/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "Microsoft.NETCore.App": "2.1.0"
+        },
+        "compile": {
+          "bin/placeholder/agents.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/agents.dll": {}
+        }
       }
     }
   },
@@ -673,11 +686,17 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "agents/1.0.0": {
+      "type": "project",
+      "path": "../agents/agents.csproj",
+      "msbuildProject": "../agents/agents.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
-      "Microsoft.NETCore.App >= 2.1.0"
+      "Microsoft.NETCore.App >= 2.1.0",
+      "agents >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -709,7 +728,11 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Database\\RnD\\STI\\SmartTrafficIntersection\\agents\\agents.csproj": {
+              "projectPath": "C:\\Database\\RnD\\STI\\SmartTrafficIntersection\\agents\\agents.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
