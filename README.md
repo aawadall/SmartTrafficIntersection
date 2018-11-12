@@ -155,6 +155,6 @@ TD(&lambda;) policy
 port the solution to a web application and allow users to play with it
 
 ## Message to Students
-We appreciate your visit to this repo, and feel proud that you landed here.
-We have a request.. PLEASE dn NOT copy code from this repo and paste it into your coursework assignment. 
+I appreciate your visit to this repo, and I feel proud that you landed here.
+I have a request.. **_PLEASE do NOT copy code from this repo and paste it into your coursework assignment_**. 
 
