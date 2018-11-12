@@ -1,0 +1,4 @@
+C:\Database\RnD\STI\SmartTrafficIntersection\obj\Debug\netcoreapp2.1\SmartTrafficIntersection.csprojAssemblyReference.cache
+C:\Database\RnD\STI\SmartTrafficIntersection\obj\Debug\netcoreapp2.1\SmartTrafficIntersection.csproj.CoreCompileInputs.cache
+C:\Database\RnD\STI\SmartTrafficIntersection\obj\Debug\netcoreapp2.1\SmartTrafficIntersection.AssemblyInfoInputs.cache
+C:\Database\RnD\STI\SmartTrafficIntersection\obj\Debug\netcoreapp2.1\SmartTrafficIntersection.AssemblyInfo.cs
