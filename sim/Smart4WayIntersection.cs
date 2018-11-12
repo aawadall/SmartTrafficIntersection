@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using SmartTrafficIntersection.agents;
 
 namespace SmartTrafficIntersection.sim
 {
@@ -9,11 +10,15 @@ namespace SmartTrafficIntersection.sim
     {
         protected Agent _agent;
 
+        public Smart4WayIntersection(int states, int actions)
+        {
+            _agent = new Agent(SmartTrafficIntersection, actions);
+        }
         public Smart4WayIntersection()
         {
             int states = 16*4; //  16 ticks * 4 modes
             int actions = 4; // 4 modes 
-            _agent = new Agent(states, actions);
+            this(states, actions);
         }
 
         protected int MapState(int state)
