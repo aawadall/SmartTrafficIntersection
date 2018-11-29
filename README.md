@@ -5,6 +5,8 @@
 [![BCH compliance](https://bettercodehub.com/edge/badge/aawadall/SmartTrafficIntersection?branch=master)](https://bettercodehub.com/)
 [![CodeFactor](https://www.codefactor.io/repository/github/aawadall/smarttrafficintersection/badge)](https://www.codefactor.io/repository/github/aawadall/smarttrafficintersection)
 
+[![Open Issues](https://img.shields.io/github/issues/aawadall/SmartTrafficIntersection.svg)](https://img.shields.io/github/issues/aawadall/SmartTrafficIntersection.svg)
+
 Another AI toy project; Of a traffic intersection controlled by an AI agent to optimize traffic flow and avoid collission. 
 
 ![Sample 8 lanes intersection](https://github.com/aawadall/SmartTrafficIntersection/blob/master/GRrTr.png)
