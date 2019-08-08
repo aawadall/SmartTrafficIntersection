@@ -78,7 +78,6 @@ namespace SmartTrafficIntersection.sim
                     //Console.WriteLine("Allowed");
                     State += 2^j;
                 }
-
            }
            State = (State << 4) + tick;
            return State; 
