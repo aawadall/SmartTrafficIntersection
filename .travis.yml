@@ -4,6 +4,4 @@ dotnet: 2.1.300
 script:
   - dotnet restore
   - dotnet build
-  - dotnet restore ./agents
-  - dotnet build ./agents
   - dotnet run 
