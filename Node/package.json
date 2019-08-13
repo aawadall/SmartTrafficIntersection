@@ -1,0 +1,11 @@
+{
+  "name": "smart-traffic-intersection",
+  "version": "0.0.1",
+  "description": "Smart Traffic Intersection using Reinforcement learning ML",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
