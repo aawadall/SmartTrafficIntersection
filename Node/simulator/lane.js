@@ -2,10 +2,18 @@
  * Lane
  */
 class Lane {
-    constructor(name, direction) {
+    
+    constructor(name) {
+        this.segments = [];
         this.name = name;
-        this.direction = direction;
     } 
+
+    simulate = function () {
+        inflow = this.getFlow();
+        segments.forEach(segment => {
+            segment.feed
+        });
+    }
 }
 
 module.exports = Lane
