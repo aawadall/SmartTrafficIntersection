@@ -1,19 +1,12 @@
-/**
- * Lane
- */
-class Lane {
-    
-    constructor(name) {
-        this.segments = [];
-        this.name = name;
-    } 
+var Segment = require('./segment');
 
-    simulate = function () {
-        inflow = this.getFlow();
-        segments.forEach(segment => {
-            segment.feed
-        });
-    }
-}
+function Lane(name){
+    this.name = name;
+    this.segments = [];
+} 
 
-module.exports = Lane
+Lane.prototype.addSegment = function(segment) {
+    this.segments.append(segment);
+};
+
+module.exports = Lane;
