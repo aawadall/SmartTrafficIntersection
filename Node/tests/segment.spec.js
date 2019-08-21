@@ -47,10 +47,33 @@ describe('Segment', function(){
         
 
         describe('Limits', function(){
-            it('Should have capacity increasing by car size');
-            it('Should have capacity decreses by car size');
-            it('Should not accept more cars if full capacity');
-            it('Should not drain cars, if empty capacity');
+            it('Should have capacity increasing by car size', function () {
+                var size = 1;
+                segment.fill(size);
+                segment.occupancy.should.equal(size);
+            });
+            it('Should have capacity decreses by car size', function () {
+                var inSize = 2;
+                var outSize = 1;
+                segment.fill(inSize);
+                segment.drain(outSize);
+                segment.occupancy.should.equal(inSize-outSize);
+                
+            });
+            it('Should not accept more cars if full capacity', function () {
+                for (var index = 0; index < 1 + segment.capacity / inFlux; index++) {
+                    segment.fill(inFlux);
+                }
+                segment.occupancy.should.not.be.above(segment.capacity);
+                
+            });
+            it('Should not drain cars, if empty capacity', function () {
+                segment.fill(inFlux);
+                for(var index = 0; index < 1 + segment.capacity / outFlux; index++) {
+                    segment.drain(outFlux);
+                }
+                segment.occupancy.should.not.be.below(0);
+            });
         
         });
     });
