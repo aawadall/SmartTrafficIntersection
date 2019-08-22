@@ -1,6 +1,8 @@
 
 var Segment = require('../simulator/segment');
-var should = require('chai').should();
+var chai = require('chai');
+chai.use(require('chai-events'));
+var should = chai.should();
 
 describe('Segment', function(){
     var segment = null;
