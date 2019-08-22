@@ -76,5 +76,22 @@ describe('Segment', function(){
             });
         
         });
+
+        describe('Events', function () {
+            describe('Emitted events', function () {
+               it('Should emit flow event when new cars enter');
+               it('Should emit empty event when last car exit');
+               it('Should emit full event when capacity reached');
+
+            });
+
+            describe('Handled events', function () {
+                
+            });
+
+            describe('Piped events', function () {
+                
+            });
+        });
     });
 });
