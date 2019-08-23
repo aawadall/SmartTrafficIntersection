@@ -59,8 +59,7 @@ describe('Segment', function(){
                 var outSize = 1;
                 segment.fill(inSize);
                 segment.drain(outSize);
-                segment.occupancy.should.equal(inSize-outSize);
-                
+                segment.occupancy.should.equal(inSize-outSize);          
             });
             it('Should not accept more cars if full capacity', function () {
                 for (var index = 0; index < 1 + segment.capacity / inFlux; index++) {
@@ -76,7 +75,6 @@ describe('Segment', function(){
                 }
                 segment.occupancy.should.not.be.below(0);
             });
-        
         });
 
         describe('Events', function () {
