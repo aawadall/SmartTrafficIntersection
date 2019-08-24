@@ -6,6 +6,14 @@ class Simulator extends EventEmitter{
         this.sources = [];
         this.sinks = [];
     }
+
+    addLane = function(lane) {
+        lanes.add(lane);
+    }
+
+    tick = function(){
+        
+    }
 }
 
 module.exports = Simulator;
