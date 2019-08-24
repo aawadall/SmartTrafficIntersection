@@ -7,7 +7,6 @@ describe('Lane', function(){
     this.beforeEach('Lane Loader', function(){
 
     });
-
     describe('Lane attributes', function(){
         it('Should have segments');
         it('Should have traffice source');

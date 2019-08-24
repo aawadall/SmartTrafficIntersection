@@ -11,5 +11,8 @@
   "dependencies": {
     "chai": "^4.2.0",
     "mocha": "^6.2.0"
+  },
+  "devDependencies": {
+    "nyc": "^14.1.1"
   }
 }
