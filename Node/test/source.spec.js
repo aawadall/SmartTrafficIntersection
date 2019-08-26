@@ -12,7 +12,9 @@ describe('Source', function () {
         source = new Source(name, outFlux);
     });
     describe('Properties', function () {
-        it('Should have an id');
+        it('Should have an id', function () {
+            source.should.have.property('id');
+        });
         it('Should have a name');
         it('Should have an outFlux');
         it('Should have the id formatted as uuid/v1');

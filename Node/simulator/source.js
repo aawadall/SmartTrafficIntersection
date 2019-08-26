@@ -3,6 +3,7 @@ const uuidv1 = require('uuid/v1');
 
 class Source extends EventEmitter {
     constructor(name, outFlux) {
+        super();
         this.id = uuidv1(); 
         this.name = name;
         this.outFlux = outFlux;
