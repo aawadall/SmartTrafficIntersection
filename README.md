@@ -1,3 +1,6 @@
+I am currently porting the original C# Code to Node.js 12.
+I would LOVE to have your contributions and proposed ideas 
+
 # SmartTrafficIntersection
 
 [![Travis Badge](https://travis-ci.com/aawadall/SmartTrafficIntersection.svg?branch=master)](https://travis-ci.com/aawadall/SmartTrafficIntersection.svg?branch=master)
