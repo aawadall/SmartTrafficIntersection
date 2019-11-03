@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Simulator
 {
-    interface IMapCelll
+    interface IMapCell
     {
         public enum CellType
         {

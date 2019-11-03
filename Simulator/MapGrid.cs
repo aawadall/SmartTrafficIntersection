@@ -9,5 +9,6 @@ namespace Simulator
     /// </summary>
     class MapGrid
     {
+        public IEnumerable<IMapCell> Cells { get; set; }
     }
 }
